@@ -1,0 +1,76 @@
+.Sid{
+    position: absolute; top: 330px; left: 60px;
+    border: 1px solid rgb(252, 90, 90);
+    padding: 5px;
+    background-color: rgba(235, 97, 97, 0.808);
+}
+.Artefacts{
+    position: absolute; top: 330px; left: 575px;
+    border: 1px solid rgb(252, 90, 90);
+    padding: 5px;
+    background-color: rgba(235, 97, 97, 0.808);
+}
+.Characters{
+     position: absolute; top: 330px; left: 1090px;
+    border: 1px solid rgb(252, 90, 90);
+    padding: 5px;
+    background-color: rgba(235, 97, 97, 0.808);
+}
+.Artefacts2{
+    position: absolute; top: 640px; left: 60px;
+    border: 1px solid rgb(252, 90, 90);
+    padding: 5px;
+    background-color: rgba(235, 97, 97, 0.808);
+}
+.Event{
+     position: absolute; top: 640px; left: 575px;
+    border: 1px solid rgb(252, 90, 90);
+    padding: 5px;
+    background-color: rgba(235, 97, 97, 0.808);
+}
+.Stream{
+    position: absolute; top: 640px; left: 1090px;
+    border: 1px solid rgb(252, 90, 90);
+    padding: 5px;
+    background-color: rgba(235, 97, 97, 0.808); 
+}
+.news1{
+    position: absolute; top: 390px; left: 50px;
+    
+
+}
+.news1_0{
+    position: absolute; top: 420px; left: 50px;
+    
+
+}
+.news2{
+    position: absolute; top: 390px; left: 565px;
+}
+.news2_0{
+    position: absolute; top: 420px; left: 565px;
+}
+.news3{
+    position: absolute; top: 390px; left: 1070px;
+}
+.news3_0{
+    position: absolute; top: 420px; left: 1070px;
+}
+.news4{
+    position: absolute; top: 700px; left: 50px;
+}
+.news4_0{
+    position: absolute; top: 730px; left: 50px;
+}
+.news5{
+    position: absolute; top: 700px; left: 565px;
+}
+.news5_0{
+    position: absolute; top: 730px; left: 565px;
+}
+.news6{
+    position: absolute; top: 700px; left: 1080px;
+}
+.news6_0{
+    position: absolute; top: 730px; left: 1080px;
+}

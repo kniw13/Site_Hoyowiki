@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOYOWIKI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+       
+        <link href="Styles/Style_glavnaya.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="bg-violet-700">
+        <nav class="bg-blue-400 border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <div  class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img src="Images/Logo.png" class="h-10" alt="Hoyologo" />
+                  <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">HoyoWiki</span>
+              </div>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-blue-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-blue-400 dark:bg-blue-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Главная</a>
+                  </li>
+                  <!--Выподающее меню для новостей-->
+                  <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownnews" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Новости<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+                    <div id="dropdownnews" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Новости Zenless Zone Zero</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Новости Honkai:Star Rail</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Новости Genshin Impact</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--Выподающее меню для игр-->
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdowngames" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Игры<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+                    <div id="dropdowngames" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="ZZZ_game.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Zenless Zone Zero</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Honkai:Star Rail</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Genshin Impact</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--Выподающее меню для интересного-->
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdowninterest" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Интересное<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+                    <div id="dropdowninterest" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="Sobitya.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">События</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div>
+            <p style="font-size: 20px;font-weight: bolder;position: relative;left: 50px;top: 40px;"><a href="glavnaya.html">Главная</a> |<a href="ZZZ_game.html">Zenless Zone Zero</a>|<a href="Obratnaya.html">Обратная связь</a>|<a href="Sobitya.html">События</a>|<a href="Sid_Guide.html">Гайд на сид</a></p>
+          </div>
+          <div id="gl">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                   <a href="Sid_Guide.html"> <img style="padding: 10px;  background: #87dafb;position: relative; left: 50px; top: 50px;" src="Images/sid-gayd-i-bild-6-335x220.jpg" alt=""></a>
+                    <div class="Sid"><p>Гайды Zenless Zone Zero</p></div>
+                    <a href="Sid_Guide.html"> <p class="news1" style=" position: absolute;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Сид в ZZZ: лучший билд, гайд </p></a>
+                     <a href="Sid_Guide.html"> <p class="news1_0" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;"> по отрядам и прокачка</p></a>
+                </div>
+                <div>
+                    <img style="padding: 10px;  background: #87dafb;position: relative; left: 50px; top: 50px;" class="h-auto max-w-full rounded-lg" src="https://wotpack.ru/wp-content/uploads/2025/09/noch-otkrytiya-neba-v-genshin-impact-gde-vzyat-i-komu-podhodit-335x220.jpg" alt="">
+                    <div class="Artefacts"><p>Гайды Genshin Impact</p></div>
+                    <p class="news2" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Ночь открытия неба в Genshin Impact: </p>
+                     <p class="news2_0" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;"> где взять и кому подходит комплект</p>
+                </div>
+                <div>
+                    <img style="padding: 10px;  background: #87dafb;position: relative; left: 50px; top: 50px;" class="h-auto max-w-full rounded-lg" src="https://wotpack.ru/wp-content/uploads/2025/09/kogo-vybivat-v-6.0-v-genshin-impact-335x220.jpg" alt="">
+                     <div class="Characters"><p>Genshin Impact</p></div>
+                     <p class="news3" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Кого в Genshin Impact выбивать в </p>
+                     <p class="news3_0" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">  патче 6.0: обзор героев</p>
+                </div>
+                <div>
+                    <img style="padding: 10px;  background: #87dafb;position: relative; left: 50px; top: 100px;" class="h-auto max-w-full rounded-lg" src="https://wotpack.ru/wp-content/uploads/2025/09/serenada-shyolkovoy-luny-v-genshin-impact-335x220.jpg" alt="">
+                    <div class="Artefacts2"><p>Гайды Genshin Impact</p></div>
+                     <p class="news4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Серенада шёлковой луны в Genshin Impact: </p>
+                     <p class="news4_0" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;"> где взять и кому подходит сет</p>
+                </div>
+                <div>
+                    <img style="padding: 10px;  background: #87dafb; position: relative; left: 50px; top: 100px;" class="h-auto max-w-full rounded-lg" src="https://wotpack.ru/wp-content/uploads/2025/09/starye-butylki-novye-druzya-2-335x220.jpg" alt="">
+                    <div class="Event"><p>Honkai:Star Rail</p></div>
+                     <p class="news5" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Старые бутылки новые друзья в HSR: </p>
+                     <p class="news5_0" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">как приготовить особые напитки</p>
+                </div>
+                <div>
+                    <img style="padding: 10px;  background: #87dafb; position: relative; left: 50px; top: 100px;" class="h-auto max-w-full rounded-lg" src="https://wotpack.ru/wp-content/uploads/2025/08/hoyoverse-na-gamescom-2025-chto-pokazhut-i-kakie-budut-anonsy-335x220.jpg" alt="">
+                    <div class="Stream"><p>Новости</p></div>
+                    <p class="news6" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">HoYoverse на Gamescom 2025:</p>
+                     <p class="news6_0" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">что покажут и какие будут анонсы</p>
+                </div>
+            </div>
+          </div>
+          <footer style="width: 1600px;position: relative;top: 150px;right: 20px;" class="bg-blue-400 rounded-lg shadow-sm m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span  style="color: black;"class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a  style="color: black;"class="hover:underline">HoyoWiki</a>.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" style="color: black;" class="hover:underline me-4 md:me-6">Рекламодателям</a>
+        </li>
+        <li>
+            <a href="Obratnaya.html"  style="color: black;"class="hover:underline me-4 md:me-6">Обратная связь</a>
+        </li>
+        <li>
+            <a href="#"  style="color: black;"class="hover:underline me-4 md:me-6">Пользовательское соглашение</a>
+        </li>
+        <li>
+            <a href="#"  style="color: black;"class="hover:underline">Политика обработки данных</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+    </body>
+
+</html>

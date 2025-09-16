@@ -1,0 +1,38 @@
+#Korobka{
+    border: 10px solid rgb(66, 117, 248);
+    position: relative;
+    background-color: rgba(66, 118, 248, 0.699);
+    width: 1300px;
+    margin: 100px;
+}
+#Sviaz{
+    position: absolute; left: 100px; top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+#palka{
+     position: absolute; left: 80px; top: 106px;
+    font-weight: bolder;
+    font-size: larger;
+    color:red;
+}
+#Contacts{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+#text1{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+#text2{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+#numeric{
+    font-size: 20px;
+    color:red
+}

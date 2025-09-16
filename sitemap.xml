@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xlms="http://127.0.0.1:5500/">
+    <url>
+    <loc>http://127.0.0.1:5500/glavnaya.html</loc>
+    <lastmod>2025-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    </url>
+     <url>
+    <loc>http://127.0.0.1:5500/Sid_Guide.html</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    </url>
+    <url>
+     <loc>http://127.0.0.1:5500/ZZZ_game.html</loc>
+    <lastmod>2025-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    </url>
+    <url>
+     <loc>http://127.0.0.1:5500/Obratnaya.html</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.2</priority>
+    </url>
+    <url>
+     <loc>http://127.0.0.1:5500/Sobitya.html</loc>
+    <lastmod>2025-09-9</lastmod>
+     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    </url>
+</urlset>

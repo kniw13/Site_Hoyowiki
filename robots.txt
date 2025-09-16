@@ -1,0 +1,11 @@
+User-agent:*
+Disallow:/Styles/
+Disallow:/Scripts/
+Disallow:/Images/
+Disallow:/ZZZ_game.html/
+Disallow:/Sobitya.html/
+Disallow:/Obratnaya.html/
+Allow:/glavnaya.html
+Allow:/Sid_Guide.html
+
+

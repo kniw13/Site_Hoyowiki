@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Сид Гайд</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <link href="Styles/Sid_guide.css" rel="stylesheet" type="text/css">
+    <script type = "module" src="Scripts/Download_table2.js"></script>
+     <script type = "module" src="Scripts/Download.js"></script>
+      <script type = "module" src="Scripts/Download_table_arti.js"></script>
+       <script type = "module" src="Scripts/Download_personaji.js"></script>
+</head>
+<body  class="bg-violet-700">
+    <nav class="bg-blue-400 border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <div  class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <a href="glavnaya.html"><img src="Images/Logo.png" class="h-10" alt="Hoyologo" /></a>
+                  <a href="glavnaya.html"><span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">HoyoWiki</span></a>
+              </div>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-blue-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-blue-400 dark:bg-blue-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="glavnaya.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Главная</a>
+                  </li>
+                  <!--Выподающее меню для новостей-->
+                  <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownnews" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Новости<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+                    <div id="dropdownnews" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Новости Zenless Zone Zero</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Новости Honkai:Star Rail</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Новости Genshin Impact</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--Выподающее меню для игр-->
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdowngames" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Игры<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+                    <div id="dropdowngames" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="ZZZ_game.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Zenless Zone Zero</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Honkai:Star Rail</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Genshin Impact</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--Выподающее меню для интересного-->
+                <li>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdowninterest" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Интересное<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg></button>
+                    <div id="dropdowninterest" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="Sobitya.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">События</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="label">
+                <p>Сид в ZZZ: лучший билд, гайд по отрядам и прокачка</p>
+          </div>
+          <p id="label2">Кто подойдет в напарники к мехе и как работают накладываемые ей усиления?</p>
+          <div id="Korobka">
+                <img style="position: relative; left: 135px; width: 1000px; height: 600px;" src="https://wotpack.ru/wp-content/uploads/2025/09/sid-gayd-i-bild-6.jpg"/>
+                <p id="label3">Гайд на Сида в Zenless Zone Zero с объяснением пассивных навыков и синергии между агентами поможет составить представление о роли мехи внутри команды. Военная тесно взаимодействует со всеми агентами Нападения, выбирая себе «Основного бойца» из группы. Ему она повышает основные дамажащие статы и восстанавливает энергию.</p>
+                <br>         </br>
+                <p id="label3">Сборка девушки прямолинейна: у неё есть сигнатурный комплект дисков, из амплификаторов нужны пушки с бонусами к главным параметрам, а билд основывается на критах и их балансе. Кроме того, с напарником в отряде меха сама повышает себе характеристики, чем упрощает подбор начальной экипировки и дальнейшую оптимизацию.</p>
+                 <br>         </br>
+                <p id="label3">Сид — кодовое имя автономного боевого робота из Вооруженных сил и позывной его пилота, Флоры. Героиня отличается детским нравом и необычными повадками, например, ест цветы, говорит на языке банбу и устраивает себе убежища в опасных зонах каверны. В сражениях, напротив, отличается хладнокровием и жестокостью, чем нередко доставляет проблемы союзникам.</p>
+                 <br>         </br>
+                <div class = "p-4 sm:ml-64">
+   <div style="position: relative;right: 120px;" class = "relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id = "List">
+         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"> 
+             <tr>
+                 <th scope="col" class="px-6 py-3">
+                     Редкость
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Когда добавили в игру
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                 Как получить персонажа
+              </th>
+                 <th scope="col" class="px-6 py-3">
+                   Специальность [класс]
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Атрибут [стихия]
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Тип удара
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Роль в отряде
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Фракция
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Рост
+                 </th>
+             </tr>
+         </thead>
+      </table>
+   </div>
+                </div>
+                <p id="label4">Как получить персонажа</p>
+                <img style="position: relative; left: 135px; width: 1000px; height: 600px;" src="https://wotpack.ru/wp-content/uploads/2025/09/sid-gayd-i-bild-7.jpg">
+                <br></br>
+                <p id="label3">Поиск сигнала героини пройдет в первой половине версии 2.2 с 4 сентября по 24 сентября 2025 года.</p>
+                <br></br>
+                 <p id="label4">Преимущества и недостатки</p>
+                 <img style="position: relative; left: 135px; width: 1000px; height: 600px;" src="https://wotpack.ru/wp-content/uploads/2025/09/sid-gayd-i-bild-9.jpg">
+                 <br></br>
+                <p id="label3">Большая часть достоинств артиллеристки заключается в её гибридной роли дамагера и баффера: универсальность позволяет попробовать её во множестве интересных комбинаций и разнообразить геймплей. С другой стороны, зацикленность на втором персонаже Нападения сильно лимитирует перспективные и удобные в реализации отряды.</p>
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th align="center" style="color: green;" scope="col" class="px-6 py-3">
+                                Преимущества
+                            </th>
+                            <td>Хороший вариант для новичков. Персонаж прост в освоении и сборке, на ней легко добиться высоких цифр на старте, в том числе, с бесплатными опциями.</td>
+                            <td>Является дамагером и баффером в «одном флаконе». Дает себе и напарнику Нападения большой прирост к силе атаки и критам, который длится все сражение.</td>
+                            <td>Наделена встроенным уклонением и входит в состояние неуязвимости при активации большинства навыков.</td>
+                            <td>Стяжка базовыми атаками и удары по области позволяют быстро расправляться с «мелочью», а маневренный самокат и состояние полета упрощают ведение боя с элитными врагами.</td>
+                            <td>Повышает актуальность другим героям своего класса из-за требований Задатков. С её помощью можно подарить «второе дыхание» старым легендаркам.</td>
+                            <td>Идеальная опция для динамичной игры с быстрым переключением агентов.</td>
+                        </tr>
+                         <tr>
+                            <th align="center" style="color: red;" scope="col" class="px-6 py-3">
+                                Недостатки
+                            </th>
+                            <td>Не способна поднять на новые вершины DPS уже готовых отрядов. Если пачка укомплектована сочетающимися между собой бойцами, то героиня составит слабую конкуренцию узкоспециализированным саппортам.</td>
+                            <td>Еще не представлено персонажа, с которым у мехи была бы идеальная по всем параметрам синергия.</td>
+                            <td>Заставляя брать в команду два онфилд-дамагера, сильно сужает круг удобных саппортов.</td>
+                        </tr>
+                    </thead>
+                </table>
+                <br></br>
+                 <p id="label4">Как собрать билд на Сида в ZZZ</p>
+                 <img style="position: relative; left: 135px; width: 1000px; height: 600px;" src="https://wotpack.ru/wp-content/uploads/2025/09/sid-gayd-i-bild-1.jpg">
+                 <br></br>
+                 <p id="label3">Благодаря основному задатку героиня повышает себе и напарнику крит. урон и силу атаки, поэтому для сбалансированного билда потребуется тщательнее развивать шанс крит. попадания. Из дополнительных параметров можно собирать пробивание, бонусы к электро урону, общему наносимому дамагу и для базовой атаки.</p>
+                <br></br>
+                <p id="label4">Рейтинг амплификаторов</p>
+                <br></br>
+                <p id="label3">Сигнатурка сильно превосходит альтернативы по объему приростов к характеристикам и баффов для основных источников DPS, поэтому найти достойную замену не так просто. Среди других «сфер» для класса Нападение предпочтение отдается тем, пассивки которых можно активировать использованием классических скиллов, а также «затычкам» с повышением характеристик через основные параметры.</p>
+                <br></br>
+               <div class = "p-4 sm:ml-64">
+   <div style="position: relative;right: 120px;" class = "relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id = "List1">
+         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"> 
+             <tr>
+                 <th scope="col" class="px-6 py-3">
+                     Амплификатор
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Название
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Редкость
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                Эффект
+              </th>
+                 <th scope="col" class="px-6 py-3">
+                   Оссобенности
+                 </th>
+             </tr>
+         </thead>
+      </table>
+   </div>
+    </div>
+            <p id="label4">Какие поставить драйв-диски</p>
+            <br></br>
+             <p id="label3">Для артиллериста выходит специальный сет, направленный на многократное усиление б/а. До появления полного набора лучших пластинок можно поставить альтернативные комплекты для дамагеров с уклоном в криты.
+
+«Половинки» ставьте исходя из того, какой характеристики не хватает героине. Например, с амплификатором на силу атаки крайне рекомендуется 2 части «Дятлокора» для дополнительного крит. шанса или «Песнь о ветке и клинке» на урон.</p>
+<div class = "p-4 sm:ml-64">
+   <div style="position: relative;right: 120px;" class = "relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id = "List2">
+         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"> 
+             <tr>
+                 <th scope="col" class="px-6 py-3">
+                     Драйв диск
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                  Название
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                Эффект
+              </th>
+                 <th scope="col" class="px-6 py-3">
+                   Оссобенности
+                 </th>
+             </tr>
+         </thead>
+      </table>
+   </div>
+    </div>
+                 <p id="label4">Рекомендуемые значения характеристик</p>
+                    <br></br>
+                    <P ID="label3">Постарайтесь выбить диски со следующими главными статами:</P>
+                    <div class = "p-4 sm:ml-64">
+   <div style="position: relative;right: 120px;" class = "relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" >
+         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"> 
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">Слот</td>
+                  <td align="center" style="font-size: 15px; font-weight: bold;">Базовый параметр</td>      
+             </tr>
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">1</td>
+                  <td style="font-size: 15px; font-weight: bold;">Здоровье (постоянный)</td>      
+             </tr>
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">2</td>
+                  <td style="font-size: 15px; font-weight: bold;">	Сила атаки (постоянный)</td>      
+             </tr>
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">3</td>
+                  <td style="font-size: 15px; font-weight: bold;">Защита (постоянный)</td>      
+             </tr>
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">4</td>
+                  <td style="font-size: 15px; font-weight: bold;">	Крит. шанс — приоритет, крит. урон</td>      
+             </tr>
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">5</td>
+                  <td style="font-size: 15px; font-weight: bold;">	Бонус Электро — приоритет, АТК/пробивание — альтернативы</td>      
+             </tr>
+             <tr>
+                 <td align="center" style="font-size: 15px; font-weight: bold;">6</td>
+                  <td style="font-size: 15px; font-weight: bold;">	АТК</td>      
+             </tr>
+             
+         </thead>
+      </table>
+   </div>
+    </div>
+    <br></br>
+              <p id="label3">При помощи саб-стат и оружия доведите показатели до значений:</p>
+              <p id="label3">-АТК: от 2 500 до 3 000 ед.;</p>
+              <p id="label3">-HP: 9 500 и выше;</p>
+              <p id="label3">-Крит. шанс: 70-90%;</p>
+              <p id="label3">-Крит. урон: 150% и выше.</p>
+              <div class = "p-4 sm:ml-64">
+   <div style="position: relative;right: 120px;" class = "relative overflow-x-auto shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id = "List3">
+         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"> 
+             <tr>
+                 <th scope="col" class="px-6 py-3">
+                     Персонаж
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                    Имя/Специальность
+                 </th>
+                 <th scope="col" class="px-6 py-3">
+                   Оссобенности
+                 </th>
+             </tr>
+         </thead>
+      </table>
+   </div>
+    </div>
+            </div>
+            <footer style="width: 1600px;position: relative;top: 150px;right: 20px;" class="bg-blue-400 rounded-lg shadow-sm m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span  style="color: black;"class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a  style="color: black;"class="hover:underline">HoyoWiki</a>.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" style="color: black;" class="hover:underline me-4 md:me-6">Рекламодателям</a>
+        </li>
+        <li>
+            <a href="Obratnaya.html"  style="color: black;"class="hover:underline me-4 md:me-6">Обратная связь</a>
+        </li>
+        <li>
+            <a href="#"  style="color: black;"class="hover:underline me-4 md:me-6">Пользовательское соглашение</a>
+        </li>
+        <li>
+            <a href="#"  style="color: black;"class="hover:underline">Политика обработки данных</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+</body>
+</html>

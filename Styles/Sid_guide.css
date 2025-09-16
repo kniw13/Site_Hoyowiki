@@ -1,0 +1,29 @@
+#Korobka{
+    border: 10px solid rgb(66, 117, 248);
+    position: relative; bottom: 50px;
+    background-color: rgba(66, 118, 248, 0.699);
+    width: 1300px;
+    margin: 100px;
+}
+#label{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    position: relative; left: 100px;top: 20px;
+}
+#label2{
+font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    position: relative; left: 100px;top: 30px;
+}
+#label3{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+#label4{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}

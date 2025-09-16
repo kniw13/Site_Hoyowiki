@@ -1,0 +1,78 @@
+#ZZZ_game{
+    position: absolute; left: 100px; top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+#palka{
+     position: absolute; left: 80px; top: 106px;
+    font-weight: bolder;
+    font-size: larger;
+    color:red;
+}
+#crumbs{
+    position: absolute; left: 76px; top: 150px;
+    color:white;
+    font-weight: bolder;
+}
+.news1{
+    position: absolute; top: 450px; left: 50px;
+
+}
+.news1_0{
+    position: absolute; top: 480px; left: 50px;
+}
+.news2{
+    position: absolute; top: 450px; left: 560px;
+}
+.news2_0{
+    position: absolute; top: 480px; left: 560px;
+}
+.news3{
+    position: absolute; top: 450px; left: 1070px;
+}
+.news3_0{
+    position: absolute; top: 480px; left: 1070px;
+}
+.news4{
+    position: absolute; top: 770px; left: 50px;
+
+}
+.news4_0{
+    position: absolute; top: 800px; left: 50px;
+}
+.news5{
+    position: absolute; top: 770px; left: 560px;
+
+}
+.news5_0{
+    position: absolute; top: 800px; left: 560px;
+}
+.news6{
+    position: absolute; top: 770px; left: 1070px;
+
+}
+.news6_0{
+    position: absolute; top: 800px; left: 1070px;
+}
+.news7{
+    position: absolute; top: 1100px; left: 50px;
+
+}
+.news7_0{
+    position: absolute; top: 1130px; left: 50px;
+}
+.news8{
+    position: absolute; top: 1100px; left: 560px;
+
+}
+.news8_0{
+    position: absolute; top: 1130px; left: 560px;
+}
+.news9{
+    position: absolute; top: 1100px; left: 1070px;
+
+}
+.news9_0{
+    position: absolute; top: 1130px; left: 1070px;
+}
